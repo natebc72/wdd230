@@ -11,7 +11,7 @@ body{
 }
 
 header, main, footer{
-    max-width: 45rem;
+    max-width: auto;
     margin: 0 auto;
     font-family: 'Orbitron', sans-serif;
 }
@@ -22,13 +22,24 @@ header{
     padding: .5rem;
     background-color: rgb(87, 101, 227);
     display: grid;
-    grid-template-columns: 200px 1fr;
-    align-items: center;
+    text-align: center;
+    font-size: 22px;
 }
 
-header img{
-    width: 80%;
-    box-shadow: 0 0 25px #444;
+main{
+    font-size: 0.8rem;
+    margin:3em;
+
+}
+div{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+img{
+    width: 55%;
+    margin: 1rem auto;
+    box-shadow: 0 0 25px rgb(119, 117, 117);
 }
 
 footer{
@@ -49,3 +60,14 @@ span{
     text-align:center;
 
 }
+
+section{
+    border: 2px solid black;
+    margin: 5px;
+    text-align: center;
+}
+a{
+    text-align: left;
+    padding: 2em;
+}
+
