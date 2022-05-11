@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-size: 16px;
+
+}
+
+header, main, footer{
+    max-width: 45rem;
+    margin: 0 auto;
+    font-family: 'Orbitron', sans-serif;
+}
+
+header{
+    margin: 1rem auto;
+    border: 2px solid rgb(247, 85, 9);
+    padding: .5rem;
+    background-color: rgb(87, 101, 227);
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    align-items: center;
+}
+
+img{
+    width: 65%;
+    box-shadow: 0 0 25px #444;
+}
+
+footer{
+    margin: 2rem auto;
+    border: 2px solid rgb(213, 78, 0);
+    padding: .5rem;
+    background-color: rgb(75, 90, 230);
+    display: grid;
+    grid-template-columns: 3fr;
+    align-items: center;
+    font-size:15px;
+    color:rgb(252, 252, 248);
+    text-align: center;
+}
+
+span{
+    color: rgb(234, 255, 49);
+    text-align:center;
+
+}
