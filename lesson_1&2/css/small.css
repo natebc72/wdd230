@@ -71,3 +71,16 @@ a{
     padding: 2em;
 }
 
+/* tHIS IS FOR A MEDIUM PAGE*/
+@media only screen and (min-width:37.5em) {
+    div{
+    grid-template-columns: 1fr 1fr;
+    }
+}
+
+/*This is for a large page*/
+@media only screen and (min-width:60em) {
+    div{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
