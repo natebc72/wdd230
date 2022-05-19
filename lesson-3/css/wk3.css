@@ -21,14 +21,13 @@ header{
     border: 2px solid rgb(247, 85, 9);
     padding: .5rem;
     background-color: rgb(87, 101, 227);
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    align-items: center;
+    display: flex;
+    justify-content: left;
 }
 
 img{
-    width: 65%;
-    box-shadow: 0 0 25px #444;
+    width: 55%;
+    box-shadow: 0 0 15px rgb(196, 191, 191);
 }
 
 footer{
@@ -48,4 +47,17 @@ span{
     color: rgb(234, 255, 49);
     text-align:center;
 
+}
+
+.strong-1{
+    color: #fee9b8;
+    background-color: black;
+}
+
+.strong-2{
+    color: #c1503a;
+}
+
+.strong-3{
+    color: #2E6E41FF;
 }
