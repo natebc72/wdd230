@@ -1,8 +1,21 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 1024px) {
+
+    
 
     nav ul li a  {
         padding: .5rem 1 rem;
     } 
+
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .placeholder-box-hero{
+        padding: 10px;
+    }
     
     
     }
