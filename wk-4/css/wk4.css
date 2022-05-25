@@ -6,12 +6,17 @@ header, body{
 }
 
 header{
-    display: flex
+    display: flex;
+	padding: 2em;
 }
 
 
 header img{
 	width: 35%;
+}
+
+body{
+	margin: 3em;
 }
 
 
@@ -43,6 +48,7 @@ nav{
 }
 
 .navigation a.ham::before {
+	display: none;
 	content: "=";
 }
 
@@ -56,6 +62,7 @@ nav{
 }
 
 .responsive a.ham::after {
+	display: none;
 	content: "X";
 }
 
@@ -98,11 +105,15 @@ footer{
 	grid-template-rows: 1fr 1fr;
     font-family: 'Courier New', Courier, monospace;
     background-color: #2E6E41FF;
-	padding: 5px;
+}
+
+.foot-pic{
+	grid-column: 1;
+	grid-row: 1;
 }
 
 .foot-1 {
-	grid-column: 1/3;
+	grid-column: 2/3;
 	grid-row: 1;
 
 }
