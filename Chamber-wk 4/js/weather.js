@@ -1,5 +1,5 @@
 //this is for the windchill in the weather box
-var temp= 50;
+var temp= 90;
 var wSpeed= 10;
 var windChill= (35.74 + (0.6215 * temp))-(35.75 * Math.pow(wSpeed,0.16)) + (0.4275*temp*Math.pow(wSpeed,0.16));
 
