@@ -1,0 +1,52 @@
+
+html{
+    background-color: rgb(15, 15, 159);
+}
+
+header,main,footer{
+    text-align: center;
+}
+
+header{
+    font-family: 'Niconne', cursive;
+    font-size: larger;
+    border-bottom: 2px solid white;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+    color: rgb(113, 185, 236);
+}
+
+h2{
+    size: 85%;
+    font-family: 'Niconne', cursive;
+}
+
+
+div section{
+    background-color: rgb(225, 100, 22);
+    padding: 5px;
+    color: white;
+    border: 2px solid white;
+    margin: 3px;
+}
+
+
+div section img{
+    box-shadow: 0px 0px 10px 0px black;
+    width: 225px;
+    height: auto;
+}
+
+
+div.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+footer {
+    margin: 20px auto;
+    font-size: 25px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    color: rgb(113, 185, 236);
+}
