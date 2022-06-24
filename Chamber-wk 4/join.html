@@ -4,9 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Join Page ~ Little Saguaro</title>
+    <link rel="shortcut icon" href="favicon.ico/favicon.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
 </head>
 <body>
+    <div id="meet">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        <button id="sheew">❎</button>
+    </div>
+    <header>
+        <img class="cacti" src="images/saguaro.webp" alt="cactus">
+        <h1>Little Saguaro <br> Chamber of Commerce</h1>
+    
+        <div class="social">
+        <a href="https://facebook.com">
+            <img src="images/facebook.png" alt="social-1">
+        </a>
+
+        <a href="https://instagram.com">
+            <img src="images/insta.png" alt="social-2">
+        </a>
+        </div>
+        <nav>
+            <button id="drop"><span>&#9776</span><span>❎</span></button>
+            <ul id="navigation">
+              <li><a class="drop" href="#">Menu</a></li>  
+              <li><a href="discover.html">Discover</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="join.html">Join</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="datetracker">
+            <span id="currentDate"></span>
+        </div>
+        </header>
+        <main>
+            <h1>Joining the Chamber</h1>
+            <p>We at the Little Saguaro Chamber of Comerce strive for the best in our community.
+                Through membership and colaboration, we hope to unite the businesses with the people.
+            </p>
+            <form class="frm" method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Membership Application Information</legend>
+                    <label class="f-info">First Name* <input type="text" name="fname" placeholder="John" required></label>
+                    <label class="f-info">Last Name* <input type="text" name="lname" placeholder="Wayne" required></label>
+                    <label class="f-info">Title <input type="text" name="title" placeholder= "Letters, Spaces, and Hyphens only" pattern="[A-Za-z -]{7,}"></label>
+                    <label class="f-info">Email* <input type="email" name="email" placeholder="user@email.com" required></label>
+                    <label class="f-info">Telephone#* <input type="tel" name="phone" placeholder="520-777-777" required></label>
+                    <label class="f-info">Business Name* <input type="text" name="bname" required></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Business Description</legend>
+                    <label class="bus-description">
+                        <textarea name="description" rows="4" placeholder="~Type Here~"></textarea>
+                    </label>
+                </fieldset>
+                
+                <div class="mbr">
+                <fieldset>
+                    <legend>Your Membership Level</legend>
+                    <label class="f-choice"><input type="radio" name="viewer" value="root">Cactus Blossom Mmebership ~ Non Profit</label>
+                    <span>Join here for free entry into the Chamber, good for Non-Profit Organizations or individuals. This first level offers associate member status.</span>
+
+                    <label class="f-choice"><input type="radio" name="viewer" value="base">Prickly Pear Mmbership ~ Bronze Status</label>
+                    <span>Join here for $40 a month for access to remote participation in quarterly meetings and information regarding new businesses coming to Sahuarita.</span>
+                    
+                    <label class="f-choice"><input type="radio" name="viewer" value="trunk">Yucca Mmebership ~ Silver Status</label>
+                    <span>Join here for $80 a month for access to in person quarterly meetings and recordings of live monthly meetings. This status 
+                        also offers members the opportunity to participate in bi-monthly live trainings and seminars which include guest speakers. also
+                        this membership offers a mention of your business once a month in our weekly emails.</span>
+                    
+                    <label class="f-choice"><input type="radio" name="viewer" value="sky">Saguaro Mmebership ~ Gold Status</label>
+                    <span>Join here for $120 a month for complete and unrestricted access to all meetings, monthly and quarterly, in person (or remote if you are out of town), seminars and trainings. You will also have the ability 
+                        to gain access to our library of recorded meetings and seminars.This status also offers you exclusive spotlight display on our hompage and mentions in our weekly emails.
+                        <strong>This membership truly guarantees the best growth for your business.</strong></span>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Chamber Confirmation and Application</legend>
+                    <label class="f-choice"><input type="checkbox" id="y-email" name="wemails">
+                        I'm interested in recieving ONLY weekly emails from The Little Saguaro Chamber of Commerce!
+                    </label>
+
+                    <label class="f-choice"><input type="checkbox" id="y-email" name="memails">
+                        I'm interested in recieving ONLY monthly emails from The Little Saguaro Chamber of Commerce!
+                    </label>
+
+                    <label class="f-choice"><input type="checkbox" id="y-email" name="bemails">
+                        I'm interested in recieving BOTH weekly AND the monthly emails from The Little Saguaro Chamber of Commerce!
+                    </label>
+
+                    <label class="f-choice"><input type="checkbox" id="agree" name="agree">
+                        I have read and I agree to the terms of membership within The Little Saguaro Chamber of Commerce!
+                        </label>
+
+                    <label class="hide" >
+                        <input type="hidden" id="formdate" name="f-date" value="">
+                    </label>
+                </fieldset>
+                <input type="submit" value="I'm ready to Apply!" class="join-btn">
+                </div>
+            </form>
+            
+        </main>
+        <footer>
+            <picture class="foot-pic">
+                <img src="images/saguaro.webp" alt="cactus">
+            </picture>
+            <div class="foot-1">
+                <h4>Little Saguaro Chamber of Commerce <br>
+                275 W. Continental Road #123 <br> Green Valley, AZ 85622</h4>
+        
+            </div>
+            <div class="foot-2">
+                <h5> &copy; 2022 |Little Saguaro Chamber | Nathan B. Christiansen | WDD 230 Project | <span id="lastModified"></span>
+        </footer>
+        <script src="js/hmpg.js"></script>
     
 </body>
 </html>
