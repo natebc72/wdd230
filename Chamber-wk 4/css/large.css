@@ -22,6 +22,10 @@
         font-size: xx-large;
     }
 
+    .drop{
+        display: none;
+    }
+
     .datetracker{
         margin: none;
         font-size: larger;
@@ -86,4 +90,14 @@
         grid-row: 3;
         grid-column: 4;
     }
+
+    footer{
+        margin-top: 3em;
+    }
+
+    .discover img{
+        width: 75%;
+    }
+
+    
 }

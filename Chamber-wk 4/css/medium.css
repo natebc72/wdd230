@@ -108,5 +108,13 @@
 	.foot-pic{
 		width: 75%;
 	}
+
+	.discover img{
+		width: 60%;
+	}
+
+    .disc_sec picture img:hover{
+        border-radius: 5px 150px;
+	}
     
-    }
+}
