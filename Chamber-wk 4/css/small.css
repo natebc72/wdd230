@@ -306,7 +306,7 @@ section img[data-src] {
 	margin-bottom: 1.5em;
 }
 
-.join-btn{
+.join .join-btn{
 	background: #6f2323;
 	color: white;
 	margin-left: 1em;
