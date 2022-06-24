@@ -307,9 +307,13 @@ section img[data-src] {
 }
 
 .join-btn{
-	background: #2e1717;
+	background: #6f2323;
 	color: white;
 	margin-left: 1em;
+}
+
+.join-btn:hover{
+	transform: scale(1.2);
 }
 
 form {
@@ -339,7 +343,6 @@ label.f-info, form div {
 }
 
 label.f-info input, form label.f-info select, textarea {
-    color: #000000;
     background-color: #FFFFFF;
     width: 90%;
     font-size: 1rem;
