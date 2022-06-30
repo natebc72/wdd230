@@ -1,0 +1,86 @@
+{
+    "members": [
+        {
+            "name": "A/C Warriors",
+            "phone": "(520)954-4347",
+            "email": "info@acwarriors.com",
+            "website": "acwarriors.com",
+            "image": "images/directory/acwarriors.webp",
+            "slogan": "We beat the heat!",
+            "membership": "Saguaro"
+        },
+        {
+            "name": "Nine Iron Golf Course",
+            "phone": "(520)648-6017 ",
+            "email": "info@9irongolf.com",
+            "website": "9irongolf.com",
+            "image": "images/directory/nineiron.webp",
+            "slogan": "We put the green in Green Valley",
+            "membership": "Saguaro"
+        },
+        {
+            "name": "The Groves",
+            "phone": "(520)420-6206 ",
+            "email": "info@sgvpecangrove.com",
+            "website": "sgvpecangrove.com",
+            "image": "images/directory/groves.webp",
+            "slogan": "We provide grove quality pecans",
+            "membership": "Saguaro"
+        },
+        {
+            "name": "Night's Construction",
+            "phone": "(520)684-3711",
+            "email": "support@niteconstruction.com",
+            "website": "niteconstruction.com",
+            "image": "images/directory/night.webp",
+            "slogan": "We build, day or night",
+            "membership": "Yucca"
+        },
+        {
+            "name": "Saguaro Inn",
+            "phone": "(520)625-0144 ",
+            "email": "info@saguaroinn.com",
+            "website": "saguaroinn.com",
+            "image": "images/directory/hotel.webp",
+            "slogan": "The needle in the haystack of hotels",
+            "membership": "Yucca"
+        },
+        {
+            "name": "Jet-Black 50's Diner",
+            "phone": "(520) 648-0537",
+            "email": "info@jetblack50sdiner.com",
+            "website": "jetblack50sdiner.com",
+            "image": "images/directory/jet.webp",
+            "slogan": "Making all other 50's diners jet-black and jealous",
+            "membership": "Yucca"
+        },
+        {
+            "name": "Lo de Pedro - Taco Shop",
+            "phone": "(520)648-7490 ",
+            "email": "info@pedrosplace.com",
+            "website": "pedrosplace.com",
+            "image": "images/directory/pedro.webp",
+            "slogan": "Vote for Pedro!",
+            "membership": "Prickly Pear"
+        },
+        {
+            "name": "Sarah's Desert Hideout - Dine and Lounge",
+            "phone": "(520)",
+            "email": "info@sarahsdeserthideout.com",
+            "website": "sarahsdeserthideout.com",
+            "image": "images/directory/sarahs.webp",
+            "slogan": "Nothing says happiness more that a book and some grub",
+            "membership": "Prickly Pear"
+        },
+        {
+            "name": "The Grey Camel Thrift Store",
+            "phone": "(520)755-8990",
+            "email": "info@greycamelthrift.com",
+            "website": "greycamelthrift.com",
+            "image": "images/directory/grey_camel.webp",
+            "slogan": "Looking to make another mans trash someone's treasure",
+            "membership": "Cactus Blossom"
+        }
+
+    ]
+}
