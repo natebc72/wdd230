@@ -116,3 +116,67 @@ function  displayResults(weatherData) {
 
 };
 
+
+//this is for the directory page
+const requestURL = 'https://natebc72.github.io/wdd230/Chamber-wk4/data/member.json';
+const cards = document.querySelector(".cards");
+
+async function getAffiliates() {
+  let response = await fetch(requestURL);
+  if (response.ok) {
+    let data = await response.json();
+    displayAffiliates(data);
+  } else {
+    throw Error(response.statusText);
+  }
+}
+
+function displaymembers(data) {
+  data.members.forEach(members => {
+    let card = document.createElement('section');
+    let h2 = document.createElement('h2');
+    let phone = document.createElement('p');
+    let email = document.createElement('p');
+    let website = document.createElement('p');
+    let image = document.createElement('img');
+    let slogan = document.createElement('p')
+    let membership = document.createElement('p');
+
+    h2.textContent = `${members.name}`;
+    phone.textContent = `Phone ~ ${members.phone}`;
+    email.textContent = `Email ~ ${members.email}`;
+    website.textContent = `Website ~ ${members.website}`;
+    membership.textContent = `${members.membership} Member`;
+
+    image.setAttribute('src', members.image);
+    image.setAttribute('alt', `Bussiness logo of ${members.name}, Little Saguaro Chamber of Commerce Member`);
+    image.setAttribute('loading', 'lazy');
+
+    card.classList.add('card')
+    card.classList.add('backcolor')
+    card.appendChild(h2);
+    card.appendChild(image);
+    card.appendChild(slogan)
+    card.appendChild(phone);
+    card.appendChild(email);
+    card.appendChild(website);
+    card.appendChild(membership);
+
+    document.querySelector('div.cards').appendChild(card);
+});
+}
+
+getmembers()
+
+const gridbtn = document.querySelector("#grid");
+const listbtn = document.querySelector("#list");
+
+gridbtn.addEventListener("click", () => {
+	cards.classList.add("grids");
+	cards.classList.remove("lists");
+});
+
+listbtn.addEventListener("click", () => {
+	cards.classList.add("lists");
+	cards.classList.remove("grids");
+});
