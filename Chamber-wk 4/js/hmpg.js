@@ -118,7 +118,7 @@ function  displayResults(weatherData) {
 
 
 //this is for the directory page
-const requestURL = 'https://natebc72.github.io/wdd230/Chamber-wk4/data/member.json';
+const requestURL = 'https://natebc72.github.io/wdd230/Chamber-wk4/member.json';
 const cards = document.querySelector(".cards");
 
 async function getAffiliates() {
@@ -131,8 +131,8 @@ async function getAffiliates() {
   }
 }
 
-function displaymembers(data) {
-  data.members.forEach(members => {
+function displayMembers(data) {
+  data.members.forEach(member => {
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let phone = document.createElement('p');
