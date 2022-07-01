@@ -138,14 +138,14 @@ function displayMembers(member) {
     let email = document.createElement('p');
     let site = document.createElement('p');
     let image = document.createElement('img');
-    let slogan = document.createElement('p');
-    let membership = document.createElement('p');
+    let slogan = document.createElement('h4');
+    let membership = document.createElement('h5');
 
     h2.textContent = `${member.name}`;
     slogan.textContent = `${member.slogan}`;
-    phone.textContent = `Phone ~ ${member.phone}`;
-    email.textContent = `Email ~ ${member.email}`;
-    site.textContent = `Website ~ ${member.website}`;
+    phone.textContent = `Phone: ${member.phone}`;
+    email.textContent = `Email: ${member.email}`;
+    site.textContent = `Site: ${member.website}`;
     membership.textContent = `${member.membership} Member`;
 
     image.setAttribute('src', member.image);
@@ -157,24 +157,23 @@ function displayMembers(member) {
     card.appendChild(slogan);
     card.appendChild(phone);
     card.appendChild(email);
-    card.appendChild(website);
+    card.appendChild(site);
     card.appendChild(membership);
 
     document.querySelector('div.cards').appendChild(card);
 };
 
-
-getMembers()
-
 const gridbtn = document.querySelector("#grid");
 const listbtn = document.querySelector("#list");
+const display = document.querySelector('article')
+
 
 gridbtn.addEventListener("click", () => {
-	cards.classList.add("grid");
-	cards.classList.remove("list");
+	display.classList.add("grid");
+	display.classList.remove("list");
 });
 
 listbtn.addEventListener("click", () => {
-	cards.classList.add("list");
-	cards.classList.remove("grid");
+	display.classList.add("list");
+	display.classList.remove("grid");
 });
