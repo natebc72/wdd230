@@ -118,7 +118,7 @@ function  displayResults(weatherData) {
 
 
 //this is for the directory page
-const requestURL = 'https://natebc72.github.io/wdd230/Chamber-wk4/member.json';
+const requestURL = 'https://natebc72.github.io/wdd230/chamber-wk-4/member.json';
 const cards = document.querySelector(".cards");
 
 async function getMembers() {
@@ -132,24 +132,25 @@ async function getMembers() {
 }
 
 function displayMembers(data) {
-  data.members.forEach(members => {
+  data.members.forEach(member => {
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let phone = document.createElement('p');
     let email = document.createElement('p');
-    let website = document.createElement('p');
+    let site = document.createElement('p');
     let image = document.createElement('img');
     let slogan = document.createElement('p')
     let membership = document.createElement('p');
 
-    h2.textContent = `${members.name}`;
-    phone.textContent = `Phone ~ ${members.phone}`;
-    email.textContent = `Email ~ ${members.email}`;
-    website.textContent = `Website ~ ${members.website}`;
-    membership.textContent = `${members.membership} Member`;
+    h2.textContent = `${member.name}`;
+    slogan.textContent = `${member.slogan}`;
+    phone.textContent = `Phone ~ ${member.phone}`;
+    email.textContent = `Email ~ ${member.email}`;
+    site.textContent = `Website ~ ${member.website}`;
+    membership.textContent = `${member.membership} Member`;
 
-    image.setAttribute('src', members.image);
-    image.setAttribute('alt', `Bussiness logo of ${members.name}, Little Saguaro Chamber of Commerce Member`);
+    image.setAttribute('src', member.image);
+    image.setAttribute('alt', `Bussiness logo of ${member.name}, Little Saguaro Chamber of Commerce Member`);
     image.setAttribute('loading', 'lazy');
 
     card.classList.add('card')
@@ -172,11 +173,11 @@ const gridbtn = document.querySelector("#grid");
 const listbtn = document.querySelector("#list");
 
 gridbtn.addEventListener("click", () => {
-	cards.classList.add("grids");
-	cards.classList.remove("lists");
+	cards.classList.add("grid");
+	cards.classList.remove("list");
 });
 
 listbtn.addEventListener("click", () => {
-	cards.classList.add("lists");
-	cards.classList.remove("grids");
+	cards.classList.add("list");
+	cards.classList.remove("grid");
 });

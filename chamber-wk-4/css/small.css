@@ -387,11 +387,21 @@ label.f-info input:required:valid {
 
 /* For the bussiness Directory*/
 
+#direct{
+	text-align: center;
+}
 
+h4 #direct{
+    padding-bottom: .75rem;
+}
 
 .directbtns {
     display: flex;
-    justify-content: center;
+	background-color: #6f2323;;
+}
+
+.directbtns h3{
+	text-align: center;
 }
 
 .directbtns button {
@@ -399,8 +409,9 @@ label.f-info input:required:valid {
     margin: 1rem;
 }
 
+
 .backcolor{
-	background: #6f2323;
+	background-color: #6f2323;
 }
 
 .bushead {
@@ -423,16 +434,16 @@ label.f-info input:required:valid {
     margin: 1rem;
 }
 
-.grids {
+.grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.grids .card {
+.grid .card {
     display: flex;
     flex-direction: column;
 }
 
-.lists .card {
+.list .card {
     padding: 1rem;
     display: flex;
     flex-direction: row;
@@ -440,7 +451,7 @@ label.f-info input:required:valid {
     justify-content: space-between;
 }
 
-.lists h2, .lists p, .lists a {
+.list h2, .list p, .list a {
     font-size: 1rem;
 }
 
