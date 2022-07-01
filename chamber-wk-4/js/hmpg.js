@@ -157,7 +157,7 @@ function displayMembers(data) {
     card.classList.add('backcolor')
     card.appendChild(h2);
     card.appendChild(image);
-    card.appendChild(slogan)
+    card.appendChild(slogan);
     card.appendChild(phone);
     card.appendChild(email);
     card.appendChild(website);
