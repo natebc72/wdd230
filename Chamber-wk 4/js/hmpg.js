@@ -121,11 +121,11 @@ function  displayResults(weatherData) {
 const requestURL = 'https://natebc72.github.io/wdd230/Chamber-wk4/member.json';
 const cards = document.querySelector(".cards");
 
-async function getAffiliates() {
+async function getMembers() {
   let response = await fetch(requestURL);
   if (response.ok) {
     let data = await response.json();
-    displayAffiliates(data);
+    displayMembers(data);
   } else {
     throw Error(response.statusText);
   }
