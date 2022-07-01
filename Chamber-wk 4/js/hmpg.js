@@ -132,7 +132,7 @@ async function getMembers() {
 }
 
 function displayMembers(data) {
-  data.members.forEach(member => {
+  data.members.forEach(members => {
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let phone = document.createElement('p');
