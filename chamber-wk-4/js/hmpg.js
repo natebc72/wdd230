@@ -121,25 +121,24 @@ function  displayResults(weatherData) {
 const requestURL = 'https://natebc72.github.io/wdd230/chamber-wk-4/member.json';
 const cards = document.querySelector(".cards");
 
-async function getMembers() {
-  let response = await fetch(requestURL);
-  if (response.ok) {
-    let data = await response.json();
-    displayMembers(data);
-  } else {
-    throw Error(response.statusText);
-  }
-}
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject);  
+    const members = jsonObject['members'];
+    members.forEach(displayMembers);
+  });
 
-function displayMembers(data) {
-  data.members.forEach(member => {
+function displayMembers(member) {
     let card = document.createElement('section');
     let h2 = document.createElement('h2');
     let phone = document.createElement('p');
     let email = document.createElement('p');
     let site = document.createElement('p');
     let image = document.createElement('img');
-    let slogan = document.createElement('p')
+    let slogan = document.createElement('p');
     let membership = document.createElement('p');
 
     h2.textContent = `${member.name}`;
@@ -150,11 +149,9 @@ function displayMembers(data) {
     membership.textContent = `${member.membership} Member`;
 
     image.setAttribute('src', member.image);
-    image.setAttribute('alt', `Bussiness logo of ${member.name}, Little Saguaro Chamber of Commerce Member`);
+    image.setAttribute('alt', ` ${member.name} logo`);
     image.setAttribute('loading', 'lazy');
 
-    card.classList.add('card')
-    card.classList.add('backcolor')
     card.appendChild(h2);
     card.appendChild(image);
     card.appendChild(slogan);
@@ -164,10 +161,10 @@ function displayMembers(data) {
     card.appendChild(membership);
 
     document.querySelector('div.cards').appendChild(card);
-});
-}
+};
 
-getmembers()
+
+getMembers()
 
 const gridbtn = document.querySelector("#grid");
 const listbtn = document.querySelector("#list");
