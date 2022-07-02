@@ -116,8 +116,20 @@
 	.foot-1{
 		margin-top: 1.5rem;
 	}
-	
-	.discover img{
+
+	.discover{
+		grid-template-columns: 2fr 1fr;
+	}
+
+	.demograph{
+		margin-bottom: 2rem;
+		margin-top: 1.5rem;
+	}
+
+	.demograph picture img{
+		width:80%; 
+	}
+	.dis_sec img{
 		width: 60%;
 	}
 

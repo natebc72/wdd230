@@ -55,8 +55,8 @@ body{
 .cacti{
 	grid-column: 1;
 	grid-row: 1/2;
-	top: .5em;
-	left: .5em;
+	padding-top: .5rem;
+	padding-left: .5rem;
 	width: 80%;
 }
 
@@ -254,12 +254,37 @@ footer{
 
 /*Discover Page CSS*/
 
+.title{
+	text-align: center;
+	text-decoration: wavy;
+}
+
 .discover{
-	display: block;
-    max-width: 1080px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     padding-top: .5rem;
     padding-bottom: .5rem;
+}
+
+.sight{
+	background-color: #6f2323;
+	margin: 1rem, 0, 1.5rem, 0;
+	border-left: solid #fee9b8 10px;
+}
+
+.dem{
+	background-color: #6f2323;
+	margin: 1.5rem, 0, 1rem, 0;
+	border-right: solid #fee9b8 10px;
+}
+
+.demograph{
+	grid-column: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #visits{
@@ -268,20 +293,34 @@ footer{
 	margin-top: 2em;;
 }
 
+.demograph p{
+	background-color: rgb(76, 191, 76);
+	border: 2px solid black;
+	width: 80%;
+}
+
+.demograph picture{
+	width: 60%;
+}
+
+.demograph picture img{
+	width: 100%;
+}
+
 .disc_sec{
+	grid-column: 2;
     display: flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    margin: 2rem 0 2rem 0;
 }
-.disc_sec .discover_con{
-    width: 50%;
+.disc_sec p{
+    width: 80%;
 	background-color: rgb(76, 191, 76);
 	border: 2px solid black;
 }
 .disc_sec picture{
-    width: 50%
+    width: 60%
 }
 
 .disc_sec picture img{
@@ -300,7 +339,7 @@ section img[data-src] {
     opacity: 0.5;
   }
 
-  #visits{
+#visits{
 	text-align: center;
 	background-color:  rgb(45, 192, 45);
 	margin-top: 2em;;
@@ -434,7 +473,7 @@ div section{
     border: 2px solid white;
     margin: 3px;
 	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, .5fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 
@@ -445,7 +484,7 @@ div section img{
 }
 
 
-.grid{
+.grid section{
     display: flex;
 }
 
