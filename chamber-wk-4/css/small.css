@@ -52,7 +52,7 @@ body{
 }
 
 
-.cacti{
+.cacti-top{
 	grid-column: 1;
 	grid-row: 1/2;
 	top: .5em;
@@ -217,8 +217,8 @@ footer{
 }
 
 .foot-pic{
-	padding: 10px;
-	width: 65%;
+	padding: 1rem;
+	width: 40%;
 	grid-row: 1;
 	grid-column: 1;
 }
@@ -226,7 +226,6 @@ footer{
 .foot-1 {
 	grid-column: 2/3;
 	grid-row: 1;
-	
 
 }
 
@@ -396,8 +395,13 @@ h4 #direct{
 }
 
 .directbtns {
+
+	width: 50%;
+	margin: 1rem;
+	padding: 1rem;
     display: flex;
-	background-color: #6f2323;;
+	justify-content: center;
+	background-color: #6f2323;
 }
 
 .directbtns button {
@@ -416,6 +420,8 @@ div section{
     color: white;
     border: 2px solid white;
     margin: 3px;
+	display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, .5fr));
 }
 
 
@@ -427,13 +433,13 @@ div section img{
 
 
 .grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    display: flex;
 }
 
 .list{
 	display: grid;
-	grid-template-rows: repeat(auto-fit, minimax(200px, 1fr));
+	grid-template-columns: minmax(auto-fit, minmax(300px,1fr));
+	grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .list section {
