@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> Home Page - Little Saguaro Chamber of Commerce </title>
+        <link rel="shortcut icon" href="favicon.ico/favicon.png">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/small.css">
+        <link rel="stylesheet" href="css/medium.css">
+        <link rel="stylesheet" href="css/large.css">
+        <link rel="shortcut icon" href="favicon.ico/favicon.png">
+</head>
+
+<body>
+    <div id="meet">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.
+        <button id="sheew">❎</button>
+    </div>
+    <header>
+        <img class="cacti" src="images/saguaro.webp" alt="cactus">
+        <h1>Little Saguaro <br> Chamber of Commerce</h1>
+    
+        <div class="social">
+        <a href="https://facebook.com">
+            <img src="images/facebook.png" alt="social-1">
+        </a>
+
+        <a href="https://instagram.com">
+            <img src="images/insta.png" alt="social-2">
+        </a>
+        </div>
+        <nav>
+            <button id="drop"><span>&#9776</span><span>❎</span></button>
+            <ul id="navigation">
+              <li><a class="drop" href="#">Menu</a></li>
+              <li><a href="index.html">Home</a></li>  
+              <li><a href="discover.html">Discover</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="join.html">Join</a></li>
+        
+            </ul>
+        </nav>
+        <div class="datetracker">
+            <span id="currentDate"></span>
+        </div>
+        </header>
+
+    <main>
+        <h1 class="con">Contact Us!</h1>
+        <h3 class="con">The Little Saguaro Chamber offers 3 points of contact. In person, by phone, or by our form below.</h3>
+        <ul class="con-list">
+            <li><strong>Stop on by!</strong> Office Hours: 10am - 2:30pm</li>
+            <li><strong>Give us a call!</strong> Phone Number: (520) 648-8703</li>
+            <li><strong>Submit a form below</strong> and our amazing Chamber secretaries will get back with you shortly! (Please allow 1-2 businessdays for a response)</li>
+        </ul>
+
+        <form class="frm" method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Contact Us</legend>
+                <label class="f-info">First Name* <input type="text" name="fname" placeholder="John" required></label>
+                <label class="f-info">Last Name* <input type="text" name="lname" placeholder="Wayne" required></label>
+                <label class="f-info">Email* <input type="email" name="email" placeholder="user@email.com" required></label>
+                <label class="f-info">Telephone#* <input type="tel" name="phone" placeholder="520-777-777" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>How Can We Help?</legend>
+                <label class="bus-description">
+                    <textarea name="description" rows="4" placeholder="~Type your questions or comments here~"></textarea>
+                </label>
+
+                <label class="hide" >
+                    <input type="hidden" id="formdate" name="f-date" value="">
+            </fieldset>
+
+            <fieldset>
+                <legend>Are you a Member?</legend>
+                <label class="f-choice"><input type="radio" name="viewer" value="root">Yes, I am a member</label>
+                <label class="f-choice"><input type="radio" name="viewer" value="root">No, I am not a member</label>
+                <label class="f-choice"><input type="radio" name="viewer" value="root">I don't know if I am a member</label>
+            </fieldset>
+            
+            <input type="submit" value="Sumbit" class="join-btn">
+
+        </div>
+
+            </form>
+
+    </main>
+
+    <footer>
+        <img class="foot-pic" src="images/saguaro.webp" alt="cactus">
+        <div class="foot-1">
+            <h4>Little Saguaro Chamber of Commerce <br>
+            275 W. Continental Road #123 <br> Green Valley, AZ 85622</h4>
+
+            <h4><a href="https://www.google.com/maps/place/Green+Valley+Sahuarita+Chamber+of+Commerce/@31.8509342,-110.999682,17z/data=!3m1!4b1!4m5!3m4!1s0x86d6849fdc4fa985:0xeeaf6c401dd6f593!8m2!3d31.8509339!4d-110.9974941">
+                Open in Maps</a></h4>
+    
+        </div>
+        <div class="foot-2">
+            <h5> &copy; 2022 |Little Saguaro Chamber | Nathan B. Christiansen | WDD 230 Project | <span id="lastModified"></span>
+    </footer>
+    <script src="js/hmpg.js"></script>
+</body>
+</html>

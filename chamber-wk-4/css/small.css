@@ -188,6 +188,12 @@ nav ul.open{
 	grid-column: 1/4;
 }
 
+.con-btn{
+	background-color: rgb(83, 214, 83);
+	font-weight: 600;
+	
+}
+
 .box-spotlight{
 	border: 1px solid black;
 	background-color:#b81e16;
@@ -465,6 +471,19 @@ div section img{
 .grid section {
 	text-align: center;
 }
+
+/*Contact page*/
+
+.con{
+	text-align: center;
+	margin-bottom: .5rem;
+}
+
+.con-list{
+	margin-bottom: .75rem;
+}
+
+
 
 
 
