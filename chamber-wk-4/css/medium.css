@@ -82,6 +82,7 @@
 	.box-weather { 
 		grid-column: 2/3;
 		grid-row: 5;
+		width: 100%;
 	}
 	
 	.box-join { 
@@ -106,7 +107,7 @@
 	}
 
 	.foot-pic{
-		width: 75%;
+		width: 85%;
 	}
 
 	.discover img{

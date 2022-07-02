@@ -52,7 +52,7 @@ body{
 }
 
 
-.cacti-top{
+.cacti{
 	grid-column: 1;
 	grid-row: 1/2;
 	top: .5em;
@@ -168,16 +168,17 @@ nav ul.open{
 .box-weather {
 	align-content: center;
 	border: 2px solid black;
-	padding: 5px;
+	padding: 2rem;
 	grid-row: 3;
+	width: 115%;
 }
 .box-weather ul{
     list-style-type: none;
 }
 
 .box-weather img{
-	width: 30%;
-	height: 30%;
+	width: 40%;
+	height: 40%;
 }
 
 .box-join { 
@@ -217,10 +218,10 @@ footer{
 }
 
 .foot-pic{
-	padding: 1rem;
-	width: 40%;
+	display:flex;
+	padding: .5rem;
 	grid-row: 1;
-	grid-column: 1;
+	width: 75%;
 }
 
 .foot-1 {
@@ -439,7 +440,7 @@ div section img{
 .list{
 	display: grid;
 	grid-template-columns: minmax(auto-fit, minmax(300px,1fr));
-	grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-rows: auto;
 }
 
 .list section {
@@ -452,7 +453,7 @@ div section img{
 }
 
 .list p{
-	padding: 10px;
+	padding: .5rem;
 }
 
 .grid section {
