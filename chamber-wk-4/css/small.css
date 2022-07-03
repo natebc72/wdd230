@@ -321,9 +321,11 @@ footer{
 }
 
 #visits{
+	grid-template-columns: 1/4;
 	text-align: center;
 	background-color:  rgb(45, 192, 45);
-	margin-top: 2em;;
+	margin-top: 2em;
+	font-weight: bolder;
 }
 
 .shop_img{
