@@ -43,8 +43,13 @@
 		border-left: 1px solid rgb(4, 2, 45);
 	}
 
+    .foot-1{
+        font-size: medium;
+    }
+
     .more-info{
         padding-right: 0;
+        font-size: medium;
     }
 
     
