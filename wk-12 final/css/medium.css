@@ -1,0 +1,52 @@
+@media only screen and (min-width: 760px){
+
+    .logo{
+        width: 100%;
+    }
+
+    .slogan{
+        margin-top: -3rem;
+        height: 50px;
+        
+    }
+
+    .weather{
+        margin: 2rem;
+        padding: .2rem;
+        grid-column: 4/6;
+    }
+
+    nav button{
+		display: none;
+	}
+	nav ul{
+		display: flex;
+	}
+
+	nav{
+        grid-column: 3/4;
+        margin-left: -3rem;
+		margin-top: 7em;
+		width: flex;
+		height: 40px;
+	}
+
+	nav ul #navigation{
+		display: flex;
+        margin-right: 2vw;
+	}
+
+	nav ul li a{
+		border: none;
+		background-color: whitesmoke;
+		border-right: 1px solid rgb(4, 2, 45);
+		border-left: 1px solid rgb(4, 2, 45);
+	}
+
+    .more-info{
+        padding-right: 0;
+    }
+
+    
+
+}
