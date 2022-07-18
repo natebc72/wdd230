@@ -23,11 +23,16 @@ body{
 
 #banner{
     display: none;
-	margin-top: -4em;
+	margin-top: 2rem;
 	margin-bottom: .5em;
-	border: 2px dashed black;
+    padding: 1rem;
+	border: 2px solid black;
     background-color: rgb(171, 97, 97);
     text-align: center;
+}
+
+#badweather{
+    background-color: whitesmoke;
 }
 
 header{
