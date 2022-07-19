@@ -52,6 +52,15 @@
         font-size: medium;
     }
 
+    /*temples*/
+
+    div section img{
+        margin-left: 5%;
+        width: 75%;
+    }
+
+    /*contact*/
+
     .con{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -69,6 +78,8 @@
         grid-column: 2;
         grid-row: 2;
     }
+
+
     
 
 }

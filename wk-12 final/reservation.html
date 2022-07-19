@@ -15,7 +15,7 @@
     <link rel="shortcut icon" href="favicon.ico/favicon (1).ico">
 </head>
 <body>
-    <div id="banner">WEATHER ALERT:<span id="badweather"></span>. Exercise caution.
+    <div id="banner"><span id="badweather"></span>
         <button id="sheew">❌</button>
 
     </div>
@@ -50,7 +50,37 @@
         </div>
     </header>
 
-    <main>
+    <main class="book">
+        <form class="frm" method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Booking Information</legend>
+                <label class="f-info">First Name* <input type="text" name="fname" placeholder="John or Jane" required></label>
+                <label class="f-info">Last Name* <input type="text" name="lname" placeholder="Doe" required></label>
+                <label class="f-info">Email* <input type="email" name="email" placeholder="user@email.com" required></label>
+                <label class="f-info">Telephone #* <input type="tel" name="phone" placeholder="520-777-777" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Reservation Information</legend>
+                <label class="f-info">Arrival* <input type="date" min="2022-7-01" max="2022-12-31" name="arrive" placeholder="mm/dd/yy" required></label>
+                <label class="f-info">Departure* <input type="date" min="2022-7-01" max="2022-12-31" name="depart" placeholder="mm/dd/yy" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Any Special Requests/Accomodations?</legend>
+                <label class="bus-description">
+                    <textarea name="description" rows="4" placeholder="~Type your requests here~"></textarea>
+                </label>
+
+                <label class="hide" >
+                    <input type="hidden" id="formdate" name="f-date" value="">
+            </fieldset>
+            
+            <input type="submit" value="Sumbit" class="book-btn">
+
+        </div>
+
+            </form>
 
     </main>
 

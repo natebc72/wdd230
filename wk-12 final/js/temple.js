@@ -36,6 +36,9 @@ function displayTemples(temple) {
     image.setAttribute('alt', ` ${temple.name} pic`);
     image.setAttribute('loading', 'lazy');
 
+    like.setAttribute('class', `like-btn`);
+    like.setAttribute('alt', `${temple.name} btn`);
+
 
     card.appendChild(h2);
     card.appendChild(image);

@@ -8,12 +8,19 @@ html{
     font-family: 'Della Respira', serif;
 }
 
+main{
+    box-shadow: 5px 5px 25px 5px black;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+
 html p{
     font-family: 'Segoe UI', sans-serif;
 }
 
 html h1{
     text-align: center;
+    text-decoration: underline;
 }
 
 body{
@@ -41,6 +48,7 @@ header{
     grid-template-rows: 1fr 75px;
     background-color: #6a7c98;
     margin-bottom: 3rem;
+    box-shadow: 4px 4px 16px 4px black;
 }
 
 
@@ -49,7 +57,8 @@ header{
     padding-left: .5rem;
     grid-column: 1;
     grid-row: 1;
-    width: 95%;
+    width: 97%;
+    box-shadow: 3px 3px 8px 3px;
 }
 
 .slogan{
@@ -58,6 +67,7 @@ header{
     grid-column: 1/3;
     margin-top: -4rem;
     grid-row: 2;
+    margin-bottom: .8rem;
     padding: .6rem;
     background-color: whitesmoke;
     border: 3px solid grey;
@@ -69,6 +79,7 @@ header{
     background-color: rgb(195, 249, 255);
     margin: .5rem;
     grid-column: 4/7;
+    box-shadow: 3px 3px 9px 3px rgb(110, 134, 184);
 }
 
 #temp{
@@ -254,7 +265,7 @@ footer{
 
 /*This is for the temple page*/
 
-.cards div section{
+div section{
     background-color: whitesmoke;
     padding: 5px;
     color: black;
@@ -263,18 +274,117 @@ footer{
 }
 
 
-.cards div section img{
+div section img{
     box-shadow: 0px 0px 10px 0px black;
     width: 60%;
-    height: auto;
+    margin-left: 10%;
 }
 
 
-.cards div {
+div.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+div h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.like-btn.clicked{
+    font-weight: bold;
+    color: white;
+    background-color: #e2cb46;
+}
+
+/*Booking Page*/
+
+.book h1{
+	text-align: center;
+}
+
+.book p{
+	text-align: center;
+	margin-bottom: 1.5em;
+}
+
+.book .book-btn{
+	background: whitesmoke;
+	margin-left: 1em;
+}
+
+.book-btn:hover{
+	transform: scale(1.2);
+}
+
+form {
+    padding: 2rem;
+    margin: 0 auto;
+    background-color: rgba(6, 128, 251, 0.3);
+}
+
+fieldset {
+    margin: 1rem;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+legend {
+    color: black;
+    padding: 1rem;
+	text-align: left;
+    font-weight: bold;
+}
+
+label.f-info, form div {
+    display: block;
+    padding-bottom: .8rem;
+    font-size: 1rem;
+	font-weight: 700;
+}
+
+label.f-info input, form label.f-info select, textarea {
+    background-color: whitesmoke;
+    width: 90%;
+    font-size: 1rem;
+	font-weight: 800;
+    padding: .8rem;
+    display: block;
+    border-radius: 2px #e2cb46;
+    box-shadow: 2px 2px 7px 2px rgb(26, 33, 41);
+}
+
+label.f-info input, form label.f-info select {
+    max-width: 50rem;
+}
+
+label.f-choice {
+    display: block;
+    padding: .75rem 0;
+    color: #FFFFFF;
+}
+
+
+label.f-info input:required {
+    border-left: #e2cb46 solid 5px;
+	border-bottom: #c2615c solid 5px;
+}
+
+label.f-info input:required:valid {
+    border-left: #e2cb46 solid 5px;
+	border-bottom: #e2cb46 solid 5px;
+}
+
+.required {
+    color: #e2cb46;
+}
+
+/*For thank you page*/
+
+.thanks{
+	text-align: center;
+	background-color: #b81e16;
+}
 
 
 /*this is for the contact pages*/
