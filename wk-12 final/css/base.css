@@ -350,7 +350,7 @@ label.f-info input, form label.f-info select, textarea {
 	font-weight: 800;
     padding: .8rem;
     display: block;
-    border-radius: 2px #e2cb46;
+    border-radius: 5px #e2cb46;
     box-shadow: 2px 2px 7px 2px rgb(26, 33, 41);
 }
 
@@ -361,7 +361,6 @@ label.f-info input, form label.f-info select {
 label.f-choice {
     display: block;
     padding: .75rem 0;
-    color: #FFFFFF;
 }
 
 
@@ -383,7 +382,8 @@ label.f-info input:required:valid {
 
 .thanks{
 	text-align: center;
-	background-color: #b81e16;
+	background-color: #0c3c88;
+    color: rgb(216, 236, 250);
 }
 
 
