@@ -252,3 +252,68 @@ footer{
     padding-bottom: .7rem;
 }
 
+/*This is for the temple page*/
+
+div section{
+    background-color: whitesmoke;
+    padding: 5px;
+    color: black;
+    border: 2px solid black;
+    margin: 3px;
+}
+
+
+div section img{
+    box-shadow: 0px 0px 10px 0px black;
+    width: 60%;
+    height: auto;
+}
+
+
+div.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+
+/*this is for the contact pages*/
+
+.m-con{
+    text-align: center;
+    padding-bottom: 4rem;
+    margin-bottom: .5rem;
+}
+
+.con{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+}
+
+.con-btn{
+    text-align: center;
+    background-color:#e2cb46; 
+}
+
+.mem{
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.nonmem{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+a:visited{
+    color:black;
+}
+
+a:hover{
+    color: white;
+}
+
+
+

@@ -1,0 +1,44 @@
+{
+    "temples":[
+        {
+            "name": "Tucson Arizona Temple",
+            "address": "7281 North Skyline Dr Tucson, AZ 85718 United States",
+            "image": "images/temples/tucson.webp",
+            "phone": "(520)359-3900",
+            "email": "tucson.templeinfo@churchofjesuschrist.org",
+            "announced": "October 6th, 2012",
+            "groundbreaking": "October 17th, 2015",
+            "dedicated": "August 13th, 2017"
+        },
+        {
+            "name": "Gila Valley Temple",
+            "address": "5291 W Highway 70 Central AZ 85531 United States",
+            "image": "images/temples/gila.webp",
+            "phone": "(928)428-7243",
+            "email": "gila.templeinfo@churchofjesuschrist.org",
+            "announced": "April 26th, 2008",
+            "groundbreaking": "February 14th, 2009",
+            "dedicated": "May 3rd, 2010"  
+        },
+        {
+            "name": "Mesa Arizona Temple",
+            "address": "101 S LeSueur Mesa, AZ 85204-1031 United States",
+            "image": "images/temples/mesa.webp",
+            "phone": "(480)833-1211",
+            "email": "mesa.templeinfo@churchofjesuschrist.org",
+            "announced": "October 1st, 1919",
+            "groundbreaking": "April 25th, 1922",
+            "dedicated": "October 23rd, 1927, April 17th, 1975, December 12th, 2021"
+        },
+        {
+            "name": "Snowflake Arizona Temple",
+            "address": "1875 W Canyon Dr Snowflake, AZ 85973-6014 United States",
+            "image": "images/temples/snowflake.webp",
+            "phone": "(928)536-6626",
+            "email": "snowflake.templeinfo@churchofjesuschrist.org",
+            "announced": "April 2nd, 2000",
+            "groundbreaking": "September 23rd, 2000",
+            "dedicated": "March 3rd, 2002"
+        }
+    ]
+}

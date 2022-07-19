@@ -52,6 +52,23 @@
         font-size: medium;
     }
 
+    .con{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 100px;
+        text-align: center;
+    }
+    
+    .mem{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    .nonmem{
+        grid-column: 2;
+        grid-row: 2;
+    }
     
 
 }
