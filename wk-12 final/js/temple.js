@@ -1,4 +1,4 @@
-const requestURL = 'https://natebc72.github.io/wdd230/chamber-wk-4/member.json';
+const requestURL = 'https://natebc72.github.io/wdd230/wk-12 final/temples.json';
 const cards = document.querySelector(".cards");
 
 fetch(requestURL)
@@ -24,13 +24,13 @@ function displayTemples(temple) {
     let like = document.createElement('button');
 
     h2.textContent = `${temple.name}`;
-    address.textContent = `Address: ${temple.address}`
+    address.textContent = `Address: ${temple.address}`;
     phone.textContent = `Phone: ${temple.phone}`;
     email.textContent = `Email: ${temple.email}`;
     announced.textContent = `Announced: ${temple.announced}`;
     groundbreaking.textContent = `Groundbreaking: ${temple.groundbreaking}`;
-    dedicated.textContent = `Dedeicated: ${temple.dedicated}`;
-    like.textContent = `Like`
+    dedicated.textContent = `Dedicated: ${temple.dedicated}`;
+    like.textContent = `Like`;
 
     image.setAttribute('src', temple.image);
     image.setAttribute('alt', ` ${temple.name} pic`);
@@ -44,6 +44,7 @@ function displayTemples(temple) {
     card.appendChild(email);
     card.appendChild(announced);
     card.appendChild(groundbreaking);
+    card.appendChild(dedicated);
     card.appendChild(like);
 
     document.querySelector('div.cards').appendChild(card);
