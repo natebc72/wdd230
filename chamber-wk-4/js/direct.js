@@ -45,15 +45,14 @@ function displayMembers(member) {
 
 const gridbtn = document.querySelector("#grid");
 const listbtn = document.querySelector("#list");
-const display = document.querySelector('article');
 
 
 gridbtn.addEventListener("click", () => {
-	display.classList.add("grid");
-	display.classList.remove("list");
+	cards.classList.add("grid");
+	cards.classList.remove("list");
 });
 
 listbtn.addEventListener("click", () => {
-	display.classList.add("list");
-	display.classList.remove("grid");
+	cards.classList.add("list");
+	cards.classList.remove("grid");
 });

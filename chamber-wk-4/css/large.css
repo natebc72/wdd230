@@ -106,5 +106,10 @@
         width: 75%;
     }
 
+    .list img{
+		display: block;
+		margin-right: 1rem;
+	}
+
     
 }

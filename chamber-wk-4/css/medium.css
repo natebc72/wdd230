@@ -159,10 +159,5 @@
     .disc_sec picture img:hover{
         border-radius: 5px 150px;
 	}
-
-	.list img{
-		display: block;
-		margin-right: 1rem;
-	}
     
 }
