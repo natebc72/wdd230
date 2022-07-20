@@ -54,11 +54,14 @@ header{
 
 .logo{
     margin-top: .5rem;
-    padding-left: .5rem;
     grid-column: 1;
     grid-row: 1;
     width: 97%;
     box-shadow: 3px 3px 8px 3px;
+}
+
+.title{
+    display: none;
 }
 
 .slogan{
@@ -291,7 +294,7 @@ div h2{
     text-decoration: underline;
 }
 
-.like-btn.clicked{
+.liked{
     font-weight: bold;
     color: white;
     background-color: #e2cb46;
@@ -423,6 +426,25 @@ a:visited{
 
 a:hover{
     color: white;
+}
+
+.conp{
+	text-align: center;
+	margin-bottom: .5rem;
+}
+
+.con-list{
+    text-align: center;
+	margin-bottom: .75rem;
+    list-style: none;
+}
+
+.f-info.mis{
+    margin-top: .1rem;
+    width: 70%;
+    height: 80%;
+    font-weight: 500;
+
 }
 
 

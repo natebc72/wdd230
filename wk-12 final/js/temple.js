@@ -21,7 +21,6 @@ function displayTemples(temple) {
     let announced = document.createElement('p');
     let groundbreaking = document.createElement('p');
     let dedicated = document.createElement('p');
-    let like = document.createElement('button');
 
     h2.textContent = `${temple.name}`;
     address.textContent = `Address: ${temple.address}`;
@@ -30,14 +29,11 @@ function displayTemples(temple) {
     announced.textContent = `Announced: ${temple.announced}`;
     groundbreaking.textContent = `Groundbreaking: ${temple.groundbreaking}`;
     dedicated.textContent = `Dedicated: ${temple.dedicated}`;
-    like.textContent = `Like`;
+    
 
     image.setAttribute('src', temple.image);
     image.setAttribute('alt', ` ${temple.name} pic`);
     image.setAttribute('loading', 'lazy');
-
-    like.setAttribute('class', `like-btn`);
-    like.setAttribute('alt', `${temple.name} btn`);
 
 
     card.appendChild(h2);

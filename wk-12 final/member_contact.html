@@ -22,6 +22,8 @@
     <header class="head">
         <img src="images/logo.webp" class="logo" alt="logo">
 
+        <span class="title"><h1>Contact-Member</h1></span>
+
         <div class="slogan">
             <span>Providing the second best haven while you prepare to enter the best.<br> Estb: 2018</span>
         </div>
@@ -53,6 +55,34 @@
     </header>
 
     <main>
+        <h1 class="conp">Contact Us!</h1>
+        <h3 class="conp">We are always eager to answer any question or attend to any concern. We can be reached one of three ways.</h3>
+        <ul class="con-list">
+            <li><strong>In Person:</strong> Our Front Desk Secretaries ar avaliable from 7am - 10pm Arizona time</li>
+            <li><strong>By Phone:</strong> (520)733-4730</li>
+            <li><strong>Or submit a form below</strong> and our secretaries will get back with you shortly! (Please allow 1-2 businessdays for a response)</li>
+        </ul>
+        <form class="frm" method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="f-info">First Name* <input type="text" name="fname" placeholder="John or Jane" required></label>
+                <label class="f-info">Last Name* <input type="text" name="lname" placeholder="Doe" required></label>
+                <label class="f-info">Email* <input type="email" name="email" placeholder="user@email.com" required></label>
+                <label class="f-info">Telephone # <input type="tel" name="phone" placeholder="520-777-777"></label>
+
+            <fieldset>
+                <legend>How can we help you?</legend>
+                <label class="book-desc">
+                    <textarea name="description" rows="4" placeholder="~Type your questions or comments here~"></textarea>
+                </label>
+    
+                <label class="hide" >
+                    <input type="hidden" id="formdate" name="f-date" value="">
+                </label>
+            </fieldset>
+
+            
+            <input type="submit" value="Submit" class="book-btn">
 
     </main>
 

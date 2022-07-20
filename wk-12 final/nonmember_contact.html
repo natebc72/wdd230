@@ -22,6 +22,8 @@
     <header class="head">
         <img src="images/logo.webp" class="logo" alt="logo">
 
+        <span class="title"><h1>Contact-Nonmember</h1></span>
+
         <div class="slogan">
             <span>Providing the second best haven while you prepare to enter the best.<br> Estb: 2018</span>
         </div>
@@ -51,6 +53,55 @@
     </header>
 
     <main>
+        <h1 class="conp">Contact Us!</h1>
+        <h3 class="conp">We are always eager to answer any question or attend to any concern. We can be reached one of three ways.</h3>
+        <ul class="con-list">
+            <li><strong>In Person:</strong> Our Front Desk Secretaries ar avaliable from 7am - 10pm Arizona time</li>
+            <li><strong>By Phone:</strong> (520)733-4730</li>
+            <li><strong>Or submit a form below</strong> and our secretaries will get back with you shortly! (Please allow 1-2 businessdays for a response)</li>
+        </ul>
+        <form class="frm" method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="f-info">First Name* <input type="text" name="fname" placeholder="John or Jane" required></label>
+                <label class="f-info">Last Name* <input type="text" name="lname" placeholder="Doe" required></label>
+                <label class="f-info">Email* <input type="email" name="email" placeholder="user@email.com" required></label>
+                <label class="f-info">Telephone # <input type="tel" name="phone" placeholder="520-777-777"></label>
+
+            <fieldset>
+                <legend>How can we help you?</legend>
+                <label class="book-desc">
+                    <textarea name="description" rows="4" placeholder="~Type your questions or comments here~"></textarea>
+                </label>
+    
+                <label class="hide" >
+                    <input type="hidden" id="formdate" name="f-date" value="">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Intrest</legend>
+
+                <label class="f-choice"><input type="checkbox" id="y-email" name="wemails">
+                    Would you be interested in learning more about the Church of Jesus Christ of Latter-Day Saints?
+                </label>
+
+                <label class="f-choice"><input type="checkbox" id="y-email" name="wemails">
+                    Would you be interested in recieving a free copy of The Book of Mormon?
+                </label>
+
+                <label class="f-choice"><input type="checkbox" id="y-email" name="memails">
+                    Would you like to learn more from our missionaries? (Your information will only be given to local missionaries for contact)
+                <label class="f-info mis">First Name* <input type="text" name="fname" placeholder="John or Jane" required></label>
+                <label class="f-info mis">Last Name <input type="text" name="lname" placeholder="Doe"></label>
+                <label class="f-info mis">Email <input type="email" name="email" placeholder="user@email.com"></label>
+                <label class="f-info mis">Telephone #* <input type="tel" name="phone" placeholder="520-777-777" required></label>
+                <label class="f-info mis">Address* <input type="text" name="address" placeholder="000 W Temple Dr" required></label>
+                <label class="f-info mis">City* <input type="text" name="city" placeholder="Tucson" required></label>
+                <label class="f-info mis">State* <input type="text" name="state" placeholder="Arizona" required></label>
+                </label>
+
+            <input type="submit" value="Submit" class="book-btn">
 
     </main>
 
@@ -82,5 +133,6 @@
             <span><h3>Temple Inn & Suites &copy;2022 | Nathan B. Christiansen | WDD 230 Final Project | <span id="lastModified"></span></h3></span>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

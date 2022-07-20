@@ -22,6 +22,8 @@
     <header class="head">
         <img src="images/logo.webp" class="logo" alt="logo">
 
+        <span class="title"><h1>Reserve</h1></span>
+
         <div class="slogan">
             <span>Providing the second best haven while you prepare to enter the best.<br> Estb: 2018</span>
         </div>
@@ -68,6 +70,23 @@
                 <legend>Reservation Information</legend>
                 <label class="f-info">Arrival* <input type="date" min="2022-7-01" max="2022-12-31" name="arrive" placeholder="mm/dd/yy" required></label>
                 <label class="f-info">Departure* <input type="date" min="2022-7-01" max="2022-12-31" name="depart" placeholder="mm/dd/yy" required></label>
+                <fieldset>
+                    <legend>Location</legend>
+                    <label class="f-choice"><input type="radio" name="viewer" value="root">Tucson</label>
+                    <label class="f-choice"><input type="radio" name="viewer" value="root">Gila Valley</label>
+                    <label class="f-choice"><input type="radio" name="viewer" value="root">Snowflake</label>
+                    <label class="f-choice"><input type="radio" name="viewer" value="root">Mesa</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Room Type</legend>
+                    <label class="f-choice"><input type="radio" name="viewer" value="root">Visitor Couple - 1 King</label>
+                    <label class="f-choice"><input type="radio" name="viewer" value="root">Visitor Family - 2 Queens</label>
+                    <label class="f-choice"><input type="radio" name="viewer" value="root">Wedding Party - Adjoining Rooms (South Wing) </label>
+                    <label class="f-choice"><input type="radio" name="viewer" value="root">Patron Couple - 1 King </label>
+                    <label class="f-choice"><input type="radio" name="viewer" value="root">Full Time Missionary Couple - 1 King (North Wing)</label>
+                </fieldset>
+
             </fieldset>
 
             <fieldset>
@@ -78,6 +97,7 @@
 
                 <label class="hide" >
                     <input type="hidden" id="formdate" name="f-date" value="">
+                </label>
             </fieldset>
 
             <fieldset>

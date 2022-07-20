@@ -2,12 +2,24 @@
 
     .logo{
         width: 100%;
+        border-radius: 4px 120px;
+    }
+
+    .logo:hover{
+        border-radius: 0px 0px;
+        background: #e2cb46;
+        background: radial-gradient(circle, #e2cb46 30%, rgba(20,137,229,1) 73%, rgba(0,98,200,1) 100%);
     }
 
     .slogan{
         margin-top: -3rem;
         height: 50px;
         
+    }
+
+    .title{
+        display: block;
+        grid-column: 2/3;
     }
 
     .weather{
