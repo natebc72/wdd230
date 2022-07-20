@@ -294,6 +294,10 @@ div h2{
     text-decoration: underline;
 }
 
+.like{
+    background-color: gray;
+}
+
 .liked{
     font-weight: bold;
     color: white;

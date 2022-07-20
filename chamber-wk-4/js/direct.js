@@ -45,7 +45,7 @@ function displayMembers(member) {
 
 const gridbtn = document.querySelector("#grid");
 const listbtn = document.querySelector("#list");
-const display = document.querySelector('article')
+const display = document.querySelector('article');
 
 
 gridbtn.addEventListener("click", () => {
