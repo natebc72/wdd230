@@ -140,16 +140,9 @@
     }
 
     /*Service*/
-    .amend{
-        grid-column: 1;
-    }
-    
-    .wedding{
-        grid-column: 2;
-    }
-    
-    .full{
-        grid-column: 3;
+
+    .service img{
+        width: 80%;
     }
 
 
