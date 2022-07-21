@@ -38,6 +38,7 @@ function displayTemples(temple) {
     image.setAttribute('loading', 'lazy');
 
     like.setAttribute('class', `tem-btn`);
+    like.setAttribute('onclick',`like(this)`)
 
 
     card.appendChild(h2);
@@ -53,14 +54,22 @@ function displayTemples(temple) {
     document.querySelector('div.cards').appendChild(card);
 };
 
-const templeBtn = document.querySelector('.tem-btn');
+var state = true;
 
-templeBtn.addEventListener("click", () => {
-  templeBtn.classList.add("liked");
-  templeBtn.classList.remove("like");
-});
+function like(){
+    if(state){
+        var like = document.querySelector('.tem-btn');
+        like.style.background = "#e2cb46";
+        localStorage.setItem("storedLike", "#e2cb46");
 
-templeBtn.addEventListener("click", () => {
-  templeBtn.classList.add("like");
-  templeBtn.classList.remove("liked");
+    }else{
+        var like = document.querySelector('.tem-btn');
+        like.style.background = "grey";
+        localStorage.setItem("storedLike", "grey");
+    }
+    state = !state;
+}
+
+window.addEventListener('DOMContentLoaded', e => {
+    like.style.color = localStorage.getItem("storedLike");
 });
