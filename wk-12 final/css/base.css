@@ -14,6 +14,14 @@ main{
     padding-bottom: 1.5rem;
 }
 
+main h1{
+    text-align: center;
+}
+
+main p{
+    text-align: center;
+}
+
 html p{
     font-family: 'Segoe UI', sans-serif;
 }
@@ -172,48 +180,97 @@ nav ul.open{
 .container{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit(3, 1fr));
     padding: 1.5rem;
 }
 
 .welcome-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 1rem;
     grid-column: 1/3;
     grid-row: 1;
-    border: 1px solid black;
+    border: 3px solid black;
     margin-bottom: 2rem;
+    background-color: whitesmoke;
+}
+
+.welcome{
+    margin-left: 2rem;
+    width: 55%;
+    height: 55%;
 }
 
 .tuc-tem{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 1rem;
     grid-column: 4/6;
     grid-row: 1;
-    border: 1px solid black;
+    border: 3px solid black;
     margin-bottom: 2rem;
+}
+
+.tuc{
+   width: 40%;
+   height: 35%;
 }
 
 .three-day{
     padding: 1rem;
     grid-column: 2/6;
     grid-row: 3;
-    border: 1px solid black;
+    border: 2px solid black;
     margin-bottom: 2rem;
 }
 
-.book{
+.res{
+    background-color: whitesmoke;
     padding: 1rem;
     grid-column: 1/3;
     grid-row: 2;
-    border: 1px solid black;
+    border: 3px solid black;
     margin-bottom: 2rem;
+    position: relative;
+}
+
+.res-btn{
+    position: absolute;
+    width: 60%;
+    bottom: 2rem;
+    right: 2rem;
+    background:#508be9;
+}
+
+a .res-btn {
+    color:#e2cb46;
+}
+
+.reserve{
+    width: 90%;
 }
 
 .care{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     padding: 1rem;
     grid-column: 4/6;
     grid-row: 2;
-    border: 1px solid black;
+    border: 3px solid black;
     margin-bottom: 2rem;
+    background-color: whitesmoke;
+}
+
+.care-img{
+    width: 40%;
+    height:35%;
 }
 
 .full-time{
@@ -238,6 +295,7 @@ footer{
     background-color: #e2cb46;
     margin-right: 0;
     margin-left: 0;
+    box-shadow: 0px 3px 2px 4px black;
 }
 
 .foot-1{
@@ -325,6 +383,7 @@ div h2{
 }
 
 form {
+    box-shadow: 3px 3px 12px 3px;
     padding: 2rem;
     margin: 0 auto;
     background-color: rgba(6, 128, 251, 0.3);
@@ -419,6 +478,14 @@ label.f-info input:required:valid {
     grid-row: 1;
 }
 
+.yes{
+    box-shadow: 4px 4px 10px 4px black;
+}
+
+.no{
+    box-shadow: 4px 4px 10px 4px black;
+}
+
 .nonmem{
     grid-column: 1;
     grid-row: 2;
@@ -450,6 +517,43 @@ a:hover{
     font-weight: 500;
 
 }
+
+/*service Page*/
+
+.service{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1.5rem;
+}
+
+.service div{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 12px 5px rgb(5, 5, 67);
+    border-radius: 25px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.service ul{
+    text-align: left;
+}
+
+.service li{
+    list-style:disc rgb(19, 19, 88);
+    
+}
+
+.list2{
+    list-style-type: none;
+    text-align: center;
+}
+
+
 
 
 
