@@ -56,4 +56,20 @@
     .more-info{
         font-size: large;
     }
+
+    .service img{
+        width: 100%;
+    }
+
+    .amend{
+        grid-column: 1;
+    }
+    
+    .wedding{
+        grid-column: 2;
+    }
+    
+    .full{
+        grid-column: 3;
+    }
 }
