@@ -37,14 +37,12 @@
 	nav{
         grid-column: 3/5;
 		margin-top: 7em;
-		margin-right: 2em;
 		width: flex;
 		height: 40px;
 	}
 
 	nav ul #navigation{
 		display: flex;
-		margin-left: 2vw;
 		border-left: 1px solid black;
 	}
 

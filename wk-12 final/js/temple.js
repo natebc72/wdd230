@@ -55,10 +55,6 @@ function displayTemples(temple) {
 
 const templeBtn = document.querySelector('.tem-btn');
 
-templeBtn.addEventListener("onload", () =>{
-  templeBtn.classList.add("like");
-});
-
 templeBtn.addEventListener("click", () => {
   templeBtn.classList.add("liked");
   templeBtn.classList.remove("like");

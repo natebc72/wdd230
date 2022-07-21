@@ -25,10 +25,12 @@ header{
 	grid-template-columns: repeat (6, 1fr);
 	background-color: #2E6E41FF;
 	margin-bottom: 3em;
+	box-shadow: 5px 5px 15px 5px black;
 }
 
 header h1{
 	font-size: medium;
+	color: whitesmoke;
 	grid-column: 2/3;
 	grid-row: 1;
 
@@ -93,7 +95,7 @@ nav ul li.active a{
 
 nav ul li a:hover{
 	color: rgb(215, 202, 202);
-	background-color: rgb(138, 26, 26, .3);
+	background-color: rgba(78, 19, 19, 0.945);
 }
 
 nav ul{
@@ -256,8 +258,9 @@ footer{
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 50px;
     font-family: 'Courier New', Courier, monospace;
-    background-color: #2E6E41FF;
+    background-color: rgb(232, 183, 215);
 	font-size: small;
+	box-shadow: 3px 3px 10px 3px black;
 }
 
 .foot-pic{
@@ -281,7 +284,7 @@ footer{
 }
 
 #lastModified{
-	color: white;
+	color: rgb(0, 105, 5);
 }
 
 
