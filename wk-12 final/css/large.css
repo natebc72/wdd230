@@ -41,6 +41,10 @@
         border: 3px solid black;
     }
 
+    .three-day{
+        grid-column: 1/7;
+    }
+
     .tuc{
         height: auto;
     }

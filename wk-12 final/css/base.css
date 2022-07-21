@@ -234,7 +234,7 @@ nav ul.open{
 
 .three-day{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(75px, 190px));
+    grid-template-columns: repeat(auto-fit, minmax(75px, 315px));
     background-color: grey;
 }
 
