@@ -1,4 +1,4 @@
-const requestURL = '';
+const requestURL = 'https://natebc72.github.io/wdd230/chamber-wk-4/member.json';
 const cards = document.querySelector("#spotlight");
 
 async function getMembers() {
@@ -47,6 +47,7 @@ function selectMembers(data) {
       phone.textContent = `Phone: ${member.phone}`;
       email.textContent = `Email: ${member.email}`;
       site.textContent = `Website: ${member.website}`;
+      membership.textContent = `${member.membership} Menber`;
   
       image.setAttribute('src', member.image);
       image.setAttribute('alt', `${member.name} logo`);

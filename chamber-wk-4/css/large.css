@@ -13,6 +13,10 @@
         margin-bottom: 3em;
     }
 
+    nav ul li a{
+		font-size: larger;
+    }
+
     .cacti{
 		width: 275px;
 		height: 225px;
@@ -22,16 +26,12 @@
         font-size: xx-large;
     }
 
-    .drop{
-        display: none;
-    }
-
     .datetracker{
         margin: none;
         font-size: larger;
     }
 
-    .social{
+    .social{ 
         grid-column: 5;
         grid-row: 1;
         width: 50px;
@@ -109,6 +109,7 @@
     .list img{
 		display: block;
 		margin-right: 1rem;
+        margin-top: 1.5rem;
 	}
 
     
