@@ -242,7 +242,6 @@ nav ul.open{
 
 .box-spotlight{
 	border: 1px solid black;
-	background-color:#b81e16;
 	padding: 5px;
 	grid-row: 6;
 	grid-column: 1/4;
@@ -251,12 +250,14 @@ nav ul.open{
 .spot-1{
 	margin: 2px;
 	border: 1px solid black;
+	box-shadow: 4px 4px 12px 4px black;
 	width: 45%;
 }
 
 .spot-2{
 	margin: 2px;
 	width: 45%;
+	box-shadow: 4px 4px 12px 4px black;
 }
 
 .spot-3{

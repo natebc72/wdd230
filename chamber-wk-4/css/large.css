@@ -94,6 +94,7 @@
 
     .spot-3{
         display: block;
+        box-shadow: 4px 4px 12px 4px black;
         grid-row: 3;
         grid-column: 4;
     }
