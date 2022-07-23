@@ -22,7 +22,7 @@ html{
 header{
 	display: grid;
 	grid-template-rows: repeat(auto-fit, minimax(100px, 1fr));
-	grid-template-columns: repeat (6, 1fr);
+	grid-template-columns: repeat(6, 1fr);
 	background-color: #2E6E41FF;
 	margin-bottom: 3em;
 	box-shadow: 5px 5px 15px 5px black;
@@ -38,17 +38,17 @@ header h1{
 }
 
 .social{
-	display: inline-flex;
-	justify-content: space-between;
-	grid-column: 3;
+	display: flex;
+	flex-direction: row;
+	grid-column: 5/6;
 	grid-row: 1;
-	width: 15%;
 	margin-top: 2em;
+	width: 50px
 }
 
 .social img{
-    padding: .3em;
-	width: 85%;
+    padding: .5rem;
+	width: 50%;
 }
 
 body{
@@ -66,14 +66,14 @@ body{
 
 nav button{
 	margin: .2rem 2vw;
-	background: rgb(27, 143, 39);
+	background: rgb(45, 192, 45);
 	font-size: 2rem;
 }
 
 nav{
-	grid-column: 4/6;
+	margin-left: 2rem;
+	grid-column: 6;
 	grid-row: 1;
-	background-color:#b81e16;
 }
 
 nav ul{
@@ -107,6 +107,7 @@ nav ul{
 
 nav ul.open{
 	display: block;
+	background-color: #e32626;
 }
 
 #drop span:nth-child(1) {display: block;}
@@ -166,6 +167,7 @@ nav ul.open{
 
 .hero-btn{
 	width: 40%;
+	font-size: small;
 	height: 15px;
 	background: #2e1717;
 	color: white;
